@@ -1,6 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Dina Watcher](https://up.htmlacademy.ru/htmlcss/14/user/182577).
+* Наставник: [Елена Арутюнян](https://htmlacademy.ru/profile/id106442).
 
 ---
 
