@@ -22,3 +22,78 @@ h4 {
   font-weight: bold;
   color: #ffffff;
 }
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+header {
+  min-height: 56px;
+}
+.menu {
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  list-style: none;
+}
+.menu li {
+  display: inline-block;
+  width: 20%;
+  font-size: 14px;
+}
+.intro {
+  height: 508px;
+  margin-bottom: 60px;
+  overflow: hidden;
+}
+.title {
+  width: 576px;
+  height: 100px;
+  margin: 0 auto;
+  margin-bottom: 55px;
+  text-align: center;
+}
+.features {
+  min-height: 256px;
+}
+.features-description {
+  display: inline-block;
+  width: 33%;
+}
+.features-photo {
+  display: inline-block;
+}
+.features-list {
+  height: 333px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.features-list li {
+  display: inline-block;
+  width: 33%;
+}
+.features-etc {
+  height: 256px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.features-etc li {
+  display: inline-block;
+  width: 33%;
+}
+.search-hotels {
+  width: 570px;
+  min-height: 292px;
+  margin: 0 auto;
+}
+.search-hotels a {
+  display: block;
+  height: 87;
+  line-height: 87px;
+}
