@@ -44,11 +44,12 @@ header {
   display: inline-block;
   width: 20%;
   font-size: 14px;
+  text-align: center;
 }
 .intro {
-  height: 508px;
+  min-height: 509px;
   margin-bottom: 60px;
-  overflow: hidden;
+  background-image: url("../img/welcome-to-sedona.jpg");
 }
 .title {
   width: 576px;
@@ -66,6 +67,21 @@ header {
 }
 .features-photo {
   display: inline-block;
+  width: 66%;
+  min-height: 256px;
+}
+.features-photo-1 {
+  background-image: url("../img/features-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.features-photo-2 {
+  background-image: url("../img/features-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
 }
 .features-list {
   height: 333px;
@@ -89,11 +105,66 @@ header {
 }
 .search-hotels {
   width: 570px;
-  min-height: 292px;
+  min-height: 192px;
   margin: 0 auto;
+  text-align: center;
 }
 .search-hotels a {
   display: block;
   height: 87;
+  text-align: center;
   line-height: 87px;
+}
+.search-form {
+  position: absolute;
+  width: 570px;
+  background-color: #ffffff;
+}
+footer {
+  min-height: 120px;
+  padding: 0;
+  margin: 0 auto;
+  font-size: 0;
+}
+.footer-tag,
+.footer-social,
+.footer-copyright {
+  display: inline-block;
+  width: 33%;
+  line-height: 120px;
+  text-align: center;
+}
+.footer-tag {
+  font-size: 21px;
+}
+.footer-social,
+.footer-copyright {
+  font-size: 14px;
+}
+.copyright-btn {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.search-hotel {
+  min-height: 220px;
+  padding: 0;
+  margin: 0;
+  background-image: url("../img/bg-hotels.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.search-hotel label {
+  display: block;
+  color: #ffffff;
+}
+.infrastructure,
+.room-type {
+  float: left;
+  width: 25%;
+}
+.price-range {
+  float: right;
+  width: 50%;
 }
