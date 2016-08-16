@@ -12,58 +12,62 @@
           <ul class="menu">
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
-            <li class="logo"><a href="#"><img src="img/logo.png" alt="логотип" width="138" height="70"></a></li>
+            <li class="logo"><a href="index.html"><img src="img/logo.png" alt="логотип" width="138" height="70"></a></li>
             <li><a href="#">Карта штата</a></li>
             <li><a href="#">Гостиницы</a></li>
           </ul>
         </nav>
       </header>
       <div class="search-hotel">
-        <form action="#" method="post">
-          <div class="infrastructure">
-            <h4>Инфраструктура:</h4>
-            <label>
-              <input type="checkbox" name="pool" id="ch-1" checked>
-              Бассейн
-            </label>
-            <label>
-              <input type="checkbox" name="parking" id="ch-2">
-              Парковка
-            </label>
-            <label>
-              <input type="checkbox" name="wi-fi" id="ch-3">
-              Wi-Fi
-            </label>
-          </div>
-          <div class="room-type">
-            <h4>Тип жилья:</h4>
-            <label>
-              <input type="checkbox" name="hotel" id="ch-4" checked>
-              Гостиница
-            </label>
-            <label>
-              <input type="checkbox" name="motel" id="ch-5" checked>
-              Мотель
-            </label>
-            <label>
-              <input type="checkbox" name="apartments" id="ch-6" checked>
-              Апартаменты</label>
-          </div>
-          <div class="price-range">
-            <h4>Стоимость в сутки:</h4>
-            <div class="price-controls">
-               от <input class="min-price" type="text" value="0">
-               до <input class="max-price" type="text" value="3000">
+        <div class="wrapper">
+          <form action="#" method="post">
+            <div class="infrastructure">
+              <h4>Инфраструктура:</h4>
+              <label>
+                <input type="checkbox" name="pool" id="ch-1" checked>
+                Бассейн
+              </label>
+              <label>
+                <input type="checkbox" name="parking" id="ch-2">
+                Парковка
+              </label>
+              <label>
+                <input type="checkbox" name="wi-fi" id="ch-3">
+                Wi-Fi
+              </label>
             </div>
-            <div class="range-controls">
-                <div class="scale">
-                  <div class="bar"></div>
+            <div class="room-type">
+              <h4>Тип жилья:</h4>
+              <label>
+                <input type="checkbox" name="hotel" id="ch-4" checked>
+                Гостиница
+              </label>
+              <label>
+                <input type="checkbox" name="motel" id="ch-5" checked>
+                Мотель
+              </label>
+              <label>
+                <input type="checkbox" name="apartments" id="ch-6" checked>
+                Апартаменты
+              </label>
+              </div>
+              <div class="price-range">
+                <h4>Стоимость в сутки:</h4>
+                <div class="price-controls">
+                  от <input class="min-price" type="text" size="4" value="0">
+                  до <input class="max-price" type="text" size="4" value="3000">
                 </div>
-                <div class="toggle min-toggle"></div>
-                <div class="toggle max-toggle"></div>
-            </div>
-          </div>
-        </form>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle min-toggle"></div>
+                  <div class="toggle max-toggle"></div>
+                </div>
+                <input type="submit" name="submit" value="Показать">
+              </div>
+            </form>
+        </div>
       </div>
       <div class="hotels-list">
         <div class="wrapper">
