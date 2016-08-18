@@ -1,4 +1,5 @@
 body {
+  margin: 0;
   font-size: 14px;
   line-height: 21px;
   color: #000000;
@@ -32,8 +33,7 @@ h4 {
   margin: 0 auto;
 }
 .wrapper {
-  width: 1056px;
-  margin: 0 auto;
+  padding: 0 73px;
 }
 
 /* МЕНЮ */
@@ -42,20 +42,27 @@ header {
   min-height: 56px;
 }
 .menu {
+  float: left;
+  width: 40%;
   padding: 0;
   margin: 0;
   font-size: 0;
   list-style: none;
 }
-.menu li {
-  display: inline-block;
-  width: 20%;
-  font-size: 14px;
-  line-height: 14px;
-  text-align: center;
-  vertical-align: middle;
+.menu:last-child {
+  float: right;
 }
-
+.menu li {
+  float: left;
+  width: 50%;
+  font-size: 14px;
+  line-height: 56px;
+  text-align: center;
+}
+.logo {
+  position: absolute;
+  left: 576px;
+}
 /* ГЛАВНАЯ */
 
 .intro {
@@ -71,56 +78,55 @@ header {
   text-align: center;
 }
 .features {
-  min-height: 256px;
-  padding: 0;
-  margin: 0;
-  font-size: 0;
+  width: 100%;
+  height: 256px;
+  background-color: #81b3d2;
+  background-repeat: no-repeat;
+  background-size: 66%;
+}
+.features-first {
+  background-image: url("../img/features-1.jpg");
+  background-position: right;
+}
+.features-second {
+  background-image: url("../img/features-2.jpg");
+  background-position: left;
 }
 .features-description {
-  display: inline-block;
-  width: 33%;
-  min-height: 256px;
-  font-size: 14px;
+  float: left;
+  width: 25%;
+  padding: 45px 50px;
+  text-align: center;
+  color: #ffffff;
 }
-.features-photo {
-  display: inline-block;
-  width: 66%;
-  min-height: 256px;
-}
-.features-photo-1 {
-  background-image: url("../img/features-1.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.features-photo-2 {
-  background-image: url("../img/features-2.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
+.features-second .features-description {
+  float: right;
 }
 .features-list {
   height: 333px;
   padding: 0;
   margin: 0;
+  font-size: 0;
   list-style: none;
 }
 .features-list li {
-  display: inline-block;
+  float: left;
   width: 33%;
+  font-size: 14px;
   text-align: center;
 }
 .features-etc {
   height: 256px;
   padding: 0;
   margin: 0;
+  font-size: 0;
   list-style: none;
 }
 .features-etc li {
   display: inline-block;
   width: 33%;
   text-align: center;
+  font-size: 14px;
 }
 .search-hotels {
   width: 570px;
@@ -190,84 +196,73 @@ footer {
 }
 .price-range {
   float: right;
-  width: 31%;
-  text-align: left;
+  width: 25%;
 }
 .sort-block {
-  min-height: 87px;
-  padding: 0;
-  margin: 0;
+  height: 90px;
+  border-bottom: 2px solid #e5e5e5;
   font-size: 0;
-  line-height: 87px;
 }
-.sort-filter,
-.sort-filter h3,
-.sort-arrows {
+.sort-block h3,
+.sort-filter {
   display: inline-block;
+  line-height: 26px;
 }
-.sort-filter,
-.sort-arrows {
-  width: 50%;
+.sort-filter {
   font-size: 14px;
 }
-.sort-filter h3 {
-  margin-right: 45px;
+.sort-block h3 {
+  margin: 33px 0;
+  margin-right: 50px;
 }
-.sort {
-  margin-left: 10px;
-  margin-right: 10px;
+.sort-filter span {
+  margin-right: 40px;
 }
-.sort:last-child {
-  margin-right: 0;
+.sort-filter a {
+  margin-right: 32px;
 }
 .sort-arrows {
-  text-align: right;
+  float: right;
+  margin-left: 410px;
 }
-/*
-article,
-section {
-  outline: 1px solid red;
+.sort-arrows a {
+  margin: 0;
 }
-*/
-article {
-  width: 100%;
-  min-height: 90px;
-  padding: 30px 0;
+.hotel-item {
+  height: 130px;
+  border-bottom: 2px solid #e5e5e5;
 }
 .hotel-item img {
   float: left;
-  margin-right: 30px;
-}
-.hotel-item section {
-  float: left;
-}
-.hotel-item h3 {
-  margin: 0;
-}
-.legend p {
-  display: inline-block;
-  margin: 10px 0;
-}
-.buttons {
-  margin: 0;
-}
-.btn {
-  padding: 5px 15px;
-  background-color: #81b3d2;
-}
-.btn:last-child {
-  background-color: #766357;
 }
 .star-rating {
   float: right;
-  text-align: right;
+  width: 110px;
 }
 .star-rating p {
-  min-height: 21px;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 42px;
+}
+.star-rating span {
+  text-align: right;
 }
 .rating {
-  padding: 5px 15px;
-  margin-top: 45px;
+  padding: 3px 10px;
   background-color: #f2f2f2;
+  text-align: center;
+}
+.hotel-item section {
+  margin-left: 167px;
+  margin-right: 110px;
+}
+.hotel-item h3 {
+  margin-top: 30px;
+  margin-bottom: 6px;
+}
+.legend span:first-child {
+  margin-right: 35px;
+}
+.btn {
+  padding: 5px 17px;
+  background-color: #81b3d2;
 }
