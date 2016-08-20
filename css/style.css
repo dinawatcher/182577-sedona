@@ -3,6 +3,7 @@ body {
   font-size: 14px;
   line-height: 21px;
   color: #000000;
+  background-color: #f2f2f2;
   font-weight: normal;
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
@@ -31,6 +32,8 @@ h4 {
 .container {
   width: 1200px;
   margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow:
 }
 .wrapper {
   padding: 0 73px;
@@ -46,6 +49,7 @@ header {
   float: left;
   width: 40%;
   padding: 0;
+  padding-top: 14px;
   margin: 0;
   font-size: 0;
   list-style: none;
@@ -57,27 +61,50 @@ header {
   float: left;
   width: 50%;
   font-size: 14px;
-  line-height: 56px;
+  line-height: 26px;
   text-align: center;
+}
+.menu a {
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+}
+.menu a:hover {
+  color: #81b3d2;
+}
+.menu a:active {
+  color: #b2b2b2;
 }
 .logo {
   position: absolute;
+  z-index: 1;
   left: 50%;
   margin-left: -69px;
 }
 /* ГЛАВНАЯ */
 
 .intro {
+  position: relative;
   min-height: 509px;
   margin-bottom: 60px;
-  background-image: url("../img/welcome-to-sedona.jpg");
+  background-image: url("../img/welcome.png"), url("../img/welcome-bg.jpg");
+  background-size: auto, cover;
+  background-repeat: no-repeat;
+  background-position: center, top;
+}
+.intro::after {
+  content: url("../img/mask.png");
+  position: absolute;
+  bottom: -6px;
 }
 .title {
   width: 576px;
-  height: 100px;
+  padding-bottom: 35px;
   margin: 0 auto;
-  margin-bottom: 55px;
   text-align: center;
+}
+.title p {
+  padding-top: 10px;
 }
 .features {
   width: 100%;
