@@ -73,7 +73,16 @@ header {
   color: #81b3d2;
 }
 .menu a:active {
-  color: #b2b2b2;
+  opacity: 0.3;
+}
+.menu .active {
+  color: #766357;
+}
+.menu .active:hover {
+  color: #604e43;
+}
+.menu .active:active {
+  opacity: 0.3;
 }
 .logo {
   position: absolute;
@@ -182,6 +191,11 @@ footer {
   font-size: 21px;
   line-height: 26px;
 }
+.footer-tag a {
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+}
 /* ОТЕЛИ */
 
 /* ФИЛЬТР ПОИСКА */
@@ -220,6 +234,9 @@ footer {
 .sort-filter {
   float: left;
 }
+.sort-filter {
+  padding-top: 5px;
+}
 .sort-arrows {
   float: right;
 }
@@ -227,13 +244,32 @@ footer {
   margin: 0;
   margin-right: 45px;
 }
+.sort-filter span,
+.sort-filter a {
+  font-size: 12px;
+  line-height: 18px;
+}
 .sort-filter span {
   margin-right: 35px;
 }
 .sort-filter a {
   margin-right: 30px;
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  border-bottom: 1px dotted #81b3d2;
 }
-
+.sort-filter a:hover {
+  color: #81b3d2;
+}
+.sort-filter a:active {
+  color: #000000;
+}
+.sort-filter .active {
+  color: #81b3d2;
+  border: none;
+  cursor: default;
+  pointer-events: none;
+}
 /* СПИСОК ОТЕЛЕЙ */
 
 .hotel-item {
@@ -270,5 +306,12 @@ footer {
 }
 .btn {
   padding: 5px 17px;
+  margin-right: 5px;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
   background-color: #81b3d2;
+}
+.btn:last-child {
+  background-color: #766357;
 }
