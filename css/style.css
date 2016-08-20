@@ -104,24 +104,13 @@ header {
 .features-second .features-description {
   float: right;
 }
-.features-list {
+.list-block {
   height: 333px;
   padding: 0;
   margin: 0;
   list-style: none;
 }
-.features-list li {
-  float: left;
-  width: 33%;
-  text-align: center;
-}
-.features-etc {
-  height: 256px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-.features-etc li {
+.list-block li {
   float: left;
   width: 33%;
   text-align: center;
