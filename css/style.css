@@ -1,4 +1,5 @@
 body {
+  margin: 0;
   font-size: 14px;
   line-height: 21px;
   color: #000000;
@@ -21,4 +22,226 @@ h4 {
   line-height: 21px;
   font-weight: bold;
   color: #ffffff;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.wrapper {
+  padding: 0 73px;
+}
+
+/* МЕНЮ */
+
+header {
+  position: relative;
+  min-height: 56px;
+}
+.menu {
+  float: left;
+  width: 40%;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  list-style: none;
+}
+.menu:last-child {
+  float: right;
+}
+.menu li {
+  float: left;
+  width: 50%;
+  font-size: 14px;
+  line-height: 56px;
+  text-align: center;
+}
+.logo {
+  position: absolute;
+  left: 50%;
+  margin-left: -69px;
+}
+/* ГЛАВНАЯ */
+
+.intro {
+  min-height: 509px;
+  margin-bottom: 60px;
+  background-image: url("../img/welcome-to-sedona.jpg");
+}
+.title {
+  width: 576px;
+  height: 100px;
+  margin: 0 auto;
+  margin-bottom: 55px;
+  text-align: center;
+}
+.features {
+  width: 100%;
+  height: 256px;
+  background-color: #81b3d2;
+  background-repeat: no-repeat;
+  background-size: 66%;
+}
+.features-first {
+  background-image: url("../img/features-1.jpg");
+  background-position: right;
+}
+.features-second {
+  background-image: url("../img/features-2.jpg");
+  background-position: left;
+}
+.features-description {
+  float: left;
+  width: 25%;
+  padding: 45px 50px;
+  text-align: center;
+  color: #ffffff;
+}
+.features-second .features-description {
+  float: right;
+}
+.list-block {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.list-block li {
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+
+/* ФОРМА ПОИСКА */
+
+.search-hotels {
+  position: relative;
+  width: 570px;
+  min-height: 192px;
+  margin: 0 auto;
+  text-align: center;
+}
+.search-hotels a {
+  display: block;
+  height: 87;
+  text-align: center;
+  line-height: 87px;
+}
+.search-form {
+  position: absolute;
+  width: 570px;
+  background-color: #ffffff;
+}
+
+/* ПОДВАЛ */
+
+footer {
+  min-height: 44px;
+  padding: 38px 73px;
+  margin: 0 auto;
+}
+.footer-item {
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+.footer-item:last-child {
+  float: right;
+}
+.footer-tag {
+  font-size: 21px;
+  line-height: 26px;
+}
+/* ОТЕЛИ */
+
+/* ФИЛЬТР ПОИСКА */
+
+.search-hotel {
+  min-height: 220px;
+  padding: 0;
+  margin: 0;
+  background-image: url("../img/bg-hotels.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.search-hotel label {
+  display: block;
+  color: #ffffff;
+}
+.infrastructure,
+.room-type {
+  float: left;
+  width: 25%;
+}
+.price-range {
+  float: right;
+  width: 25%;
+}
+
+/* СОРТИРОВКА */
+
+.sort-block {
+  min-height: 56px;
+  padding-top: 30px;
+  border-bottom: 2px solid #e5e5e5;
+}
+.sort-block h3,
+.sort-filter {
+  float: left;
+}
+.sort-arrows {
+  float: right;
+}
+.sort-block h3 {
+  margin: 0;
+  margin-right: 45px;
+}
+.sort-filter span {
+  margin-right: 35px;
+}
+.sort-filter a {
+  margin-right: 30px;
+}
+
+/* СПИСОК ОТЕЛЕЙ */
+
+.hotel-item {
+  min-height: 118px;
+  padding-top: 30px;
+  border-bottom: 2px solid #e5e5e5;
+}
+.hotel-item img {
+  float: left;
+  margin-right: 30px;
+}
+.star-rating {
+  float: right;
+}
+.star-rating p {
+  margin-top: 0;
+  margin-bottom: 42px;
+  text-align: right;
+}
+.star-rating span {
+  text-align: right;
+}
+.rating {
+  padding: 3px 10px;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+.hotel-item section {
+  overflow: hidden;
+}
+.hotel-item h3 {
+  margin: 0;
+  margin-bottom: 5px;
+}
+.btn {
+  padding: 5px 17px;
+  background-color: #81b3d2;
 }
