@@ -36,7 +36,7 @@ h4 {
   box-shadow: 0 0 15px 5px rgba(0,1,1,0.2);
 }
 .wrapper {
-  padding: 0 68px;
+  padding: 0 70px;
 }
 
 /* МЕНЮ */
@@ -133,12 +133,15 @@ header {
 .features-description {
   float: left;
   width: 25%;
-  padding: 45px 50px;
+  padding: 30px 50px;
   text-align: center;
   color: #ffffff;
 }
 .features-second .features-description {
   float: right;
+}
+.features-description h3 {
+  padding: 0 50px;
 }
 .list-block {
   padding: 0;
@@ -150,25 +153,77 @@ header {
   width: 33%;
   text-align: center;
 }
-
+.list-block li:last-child {
+  float: right;
+}
+.list-block h3 {
+  width: 130px;
+  margin: 21px auto;
+}
+.advice-block li {
+  position: relative;
+  padding-top: 140px;
+  padding-bottom: 80px;
+}
+.advice-block p {
+  width: 300px;
+  margin: auto;
+}
+.advice h3::before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 150px;
+  width: 100px;
+  height: 100px;
+  background-image: url("../img/advice.png");
+  background-repeat: no-repeat;
+}
+.advice-2 h3::before {
+  background-position: -95px;
+}
+.advice-3 h3::before {
+  background-position: -183px;
+}
+.features-list {
+  background-color: #eeeeee;
+  margin-bottom: 50px;
+}
+.features-list li {
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+.features-list p {
+  width: 280px;
+  margin: 21px auto;
+}
 /* ФОРМА ПОИСКА */
 
 .search-hotels {
   position: relative;
-  width: 570px;
+  width: 568px;
   min-height: 192px;
   margin: 0 auto;
   text-align: center;
+}
+.search-hotels p {
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 .search-hotels a {
   display: block;
   height: 87;
   text-align: center;
+  color: #ffffff;
+  background-color: #766357;
+  font-size: 21px;
+  text-decoration: none;
   line-height: 87px;
 }
 .search-form {
+  display: none;
   position: absolute;
-  width: 570px;
+  width: 568px;
   background-color: #ffffff;
 }
 
