@@ -237,12 +237,12 @@ footer {
 .footer-item {
   float: left;
   width: 33%;
-  text-align: center;
 }
 .footer-item:last-child {
   float: right;
 }
 .footer-tag {
+  margin-top: 10px;
   font-size: 21px;
   line-height: 26px;
 }
@@ -251,6 +251,47 @@ footer {
   font-weight: bold;
   text-decoration: none;
 }
+.footer-social {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  text-align: center;
+}
+.social-btn {
+  display: inline-block;
+  width: 46px;
+  height: 48px;
+  margin-right: 7px;
+  background: #81b3d2 url("../img/sprite.png") no-repeat;
+}
+.social-btn:last-child {
+  margin-right: 0;
+}
+.social-btn:hover {
+  background-color: #669ec0;
+}
+.social-btn:active {
+  opacity: 0.3;
+}
+.social-btn-twi {
+  background-position: -415px 2px;
+}
+.social-btn-fb {
+  background-position: -372px 0;
+}
+.social-btn-youtube {
+  background-position: -463px 1px;
+}
+.footer-copyright {
+  margin-top: 10px;
+  text-align: right;
+}
+.footer-copyright a {
+  display: inline-block;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
 /* ОТЕЛИ */
 
 /* ФИЛЬТР ПОИСКА */
@@ -294,6 +335,26 @@ footer {
 }
 .sort-arrows {
   float: right;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+.sort-up,
+.sort-down {
+  display: inline-block;
+  width: 11px;
+  height: 10px;
+  background: #ffffff url("../img/sprite.png") no-repeat;
+}
+.sort-up {
+  margin-right: 15px;
+  background-position: -138px -15px;
+  opacity: 0.3;
+  cursor: default;
+  pointer-events: none;
+}
+.sort-down {
+  background-position: -15px -15px;
 }
 .sort-block h3 {
   margin: 0;
@@ -340,12 +401,20 @@ footer {
   float: right;
 }
 .star-rating p {
-  margin-top: 0;
+  margin: 0;
+  padding: 0;
   margin-bottom: 42px;
+  font-size: 0;
   text-align: right;
 }
-.star-rating span {
+.star {
+  display: inline-block;
+  width: 18px;
+  height: 17px;
+  margin-left: 5px;
+  vertical-align: top;
   text-align: right;
+  background: #ffffff url("../img/sprite.png") no-repeat -691px -14px;
 }
 .rating {
   padding: 3px 10px;
