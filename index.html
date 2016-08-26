@@ -90,18 +90,19 @@
             <input type="date" name="check-out" value="2016-07-04" id="check-out">
             <span class="sprite sprite-calendar"></span>
           </fieldset>
-          <fieldset class="guest-number clearfix">
-            <label for="adults">
-              Взрослые:
+          <fieldset class="guest-number">
+            <label for="adults">Взрослые:</label>
+            <span class="counter-block">
               <button class="sprite sprite-minus" type="button" name="button"></button>
               <input type="number" name="adults" value="2" id="adults">
               <button class="sprite sprite-plus" type="button" name="button"></button>
-            </label>
-            <label for="children">Дети:
+            </span>
+            <label for="children">Дети:</label>
+            <span class="counter-block">
               <button class="sprite sprite-minus" type="button" name="button"></button>
               <input type="number" name="children" value="0" id="children">
               <button class="sprite sprite-plus" type="button" name="button"></button>
-            </label>
+            </span>
           </fieldset>
           <input type="submit" name="search" value="Найти" id="search">
         </form>
