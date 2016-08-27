@@ -443,7 +443,7 @@ footer {
   text-transform: uppercase;
 }
 .sprite-calendar::before {
-  left: 95%;
+  left: -20px;
 
   width: 22px;
   height: 22px;
