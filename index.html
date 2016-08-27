@@ -80,29 +80,27 @@
         </p>
         <a href="#">Поиск гостиницы в Седоне</a>
         <form class="search-form" action="#" method="post">
-          <fieldset class="date-picker">
+          <fieldset class="date-picker sprite sprite-calendar">
             <label for="check-in">Дата заезда:</label>
             <input type="date" name="check-in" value="2016-04-24" id="check-in">
-            <button class="sprite sprite-calendar" type="button"></button>
           </fieldset>
-          <fieldset class="date-picker">
+          <fieldset class="date-picker sprite sprite-calendar">
             <label for="check-out">Дата выезда:</label>
             <input type="date" name="check-out" value="2016-07-04" id="check-out">
-            <button class="sprite sprite-calendar" type="button"></button>
           </fieldset>
           <fieldset class="guest-number">
             <label for="adults">Взрослые:</label>
-            <span class="counter-block">
+            <div class="counter-block">
               <button class="sprite sprite-minus" type="button" name="button"></button>
               <input type="number" name="adults" value="2" id="adults">
               <button class="sprite sprite-plus" type="button" name="button"></button>
-            </span>
+            </div>
             <label for="children">Дети:</label>
-            <span class="counter-block">
+            <div class="counter-block">
               <button class="sprite sprite-minus" type="button" name="button"></button>
               <input type="number" name="children" value="0" id="children">
               <button class="sprite sprite-plus" type="button" name="button" value="submit"></button>
-            </span>
+            </div>
           </fieldset>
           <button type="submit" name="search" id="search">Найти</button>
         </form>
