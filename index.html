@@ -36,15 +36,15 @@
         </div>
       </div>
       <ul class="advice-block list-block clearfix">
-        <li class="advice advice-1">
+        <li class="advice">
           <h3 class="sprite sprite-icon-1">Жилье</h3>
           <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </li>
-        <li class="advice advice-2">
+        <li class="advice">
           <h3 class="sprite sprite-icon-2">Еда</h3>
           <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </li>
-        <li class="advice advice-3">
+        <li class="advice">
           <h3 class="sprite sprite-icon-3">Сувениры</h3>
           <p>Не только китайского, но и местного производства!</p>
         </li>
@@ -80,15 +80,15 @@
         </p>
         <a href="#">Поиск гостиницы в Седоне</a>
         <form class="search-form" action="#" method="post">
-          <fieldset>
+          <fieldset class="date-picker">
             <label for="check-in">Дата заезда:</label>
             <input type="date" name="check-in" value="2016-04-24" id="check-in">
-            <span class="sprite sprite-calendar"></span>
+            <button class="sprite sprite-calendar" type="button"></button>
           </fieldset>
-          <fieldset>
+          <fieldset class="date-picker">
             <label for="check-out">Дата выезда:</label>
             <input type="date" name="check-out" value="2016-07-04" id="check-out">
-            <span class="sprite sprite-calendar"></span>
+            <button class="sprite sprite-calendar" type="button"></button>
           </fieldset>
           <fieldset class="guest-number">
             <label for="adults">Взрослые:</label>
@@ -101,10 +101,10 @@
             <span class="counter-block">
               <button class="sprite sprite-minus" type="button" name="button"></button>
               <input type="number" name="children" value="0" id="children">
-              <button class="sprite sprite-plus" type="button" name="button"></button>
+              <button class="sprite sprite-plus" type="button" name="button" value="submit"></button>
             </span>
           </fieldset>
-          <input type="submit" name="search" value="Найти" id="search">
+          <button type="submit" name="search" id="search">Найти</button>
         </form>
       </div>
       <div class="map">
