@@ -379,12 +379,8 @@ footer {
 .search-form label {
   width: 25%;
 }
-.date-picker {
-  font-size: 0;
-}
-.counter-block {
-  font-size: 0;
-}
+.date-picker,
+.counter-block,
 .guest-number {
   font-size: 0;
 }
