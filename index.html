@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <div class="container">
@@ -34,16 +36,16 @@
         </div>
       </div>
       <ul class="advice-block list-block clearfix">
-        <li>
-          <h3>Жилье</h3>
+        <li class="advice">
+          <h3 class="sprite sprite-icon-1">Жилье</h3>
           <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </li>
-        <li>
-          <h3>Еда</h3>
+        <li class="advice">
+          <h3 class="sprite sprite-icon-2">Еда</h3>
           <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </li>
-        <li>
-          <h3>Сувениры</h3>
+        <li class="advice">
+          <h3 class="sprite sprite-icon-3">Сувениры</h3>
           <p>Не только китайского, но и местного производства!</p>
         </li>
       </ul>
@@ -78,31 +80,31 @@
         </p>
         <a href="#">Поиск гостиницы в Седоне</a>
         <form class="search-form" action="#" method="post">
-          <fieldset>
-            <label for="check-in">Дата заезда</label>
+          <fieldset class="date-picker">
+            <label for="check-in">Дата заезда:</label>
             <input type="date" name="check-in" value="2016-04-24" id="check-in">
-            <span class="icon"></span>
+            <span class="sprite sprite-calendar"></span>
           </fieldset>
-          <fieldset>
-            <label for="check-out">Дата выезда</label>
+          <fieldset class="date-picker">
+            <label for="check-out">Дата выезда:</label>
             <input type="date" name="check-out" value="2016-07-04" id="check-out">
-            <span class="icon"></span>
+            <span class="sprite sprite-calendar"></span>
           </fieldset>
-          <fieldset>
-            <label for="adults">Взрослые</label>
-            <div class="adults-block">
-              <button type="button" name="button">-</button>
+          <fieldset class="guest-number">
+            <label for="adults">Взрослые:</label>
+            <div class="counter-block">
+              <button class="sprite sprite-minus" type="button" name="button"></button>
               <input type="number" name="adults" value="2" id="adults">
-              <button type="button" name="button">+</button>
+              <button class="sprite sprite-plus" type="button" name="button"></button>
             </div>
-            <label for="children">Дети</label>
-            <div class="children-block">
-              <button type="button" name="button">-</button>
+            <label for="children">Дети:</label>
+            <div class="counter-block">
+              <button class="sprite sprite-minus" type="button" name="button"></button>
               <input type="number" name="children" value="0" id="children">
-              <button type="button" name="button">+</button>
+              <button class="sprite sprite-plus" type="button" name="button" value="submit"></button>
             </div>
-            <input type="submit" name="search" value="Найти" id="search">
           </fieldset>
+          <button type="submit" name="search" id="search">Найти</button>
         </form>
       </div>
       <div class="map">
@@ -113,13 +115,13 @@
             <a href="https://www.instagram.com/explore/tags/visitsedona/">#visitSedona</a>
           </div>
           <div class="footer-social footer-item">
-            <a class="social-btn social-btn-twi" href="#">Твиттер</a>
-            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-            <a class="social-btn social-btn-youtube" href="#">Ютуб</a>
+            <a class="social-btn sprite sprite-ico-twi" href="#" title="Твиттер"></a>
+            <a class="social-btn sprite sprite-ico-fb" href="#" title="Фейсбук"></a>
+            <a class="social-btn sprite sprite-ico-youtube" href="#" title="Ютуб"></a>
           </div>
           <div class="footer-copyright footer-item">
-            Website by
-            <a href="https://htmlacademy.ru"><img class="copyright-btn" src="img/copyright.png" width="113" height="39" alt=""></a>
+            <span>Website by</span>
+            <a class="wrapper sprite sprite-copyright" href="https://htmlacademy.ru" title="HTMLacademy"></a>
           </div>
       </footer>
     </div>
