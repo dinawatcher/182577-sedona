@@ -25,12 +25,12 @@
       <div class="intro">
       </div>
       <div class="title">
-        <h3>Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
+        <h3>Седона — небольшой городок в Аризоне, заслуживающий большего!</h3>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
       <div class="features features-first">
         <div class="features-description">
-          <h3>Настоящий городок</h3>
+          <h3 class="features-title">Настоящий городок</h3>
           <p>— №1 —</p>
           <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
         </div>
@@ -51,24 +51,24 @@
       </ul>
       <div class="features features-second">
         <div class="features-description">
-          <h3>Там есть мост Дьявола</h3>
+          <h3 class="features-title">Там есть<br> мост Дьявола</h3>
           <p>— №2 —</p>
           <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
       </div>
       <ul class="features-list list-block clearfix">
         <li>
-          <h3>Небольшая площадь</h3>
+          <h3 class="features-title">Небольшая площадь</h3>
           <p>— №3 —</p>
           <p>Все достопримечательности находятся очень близко</p>
         </li>
         <li>
-          <h3>Красивая дорога</h3>
+          <h3 class="features-title">Красивая дорога</h3>
           <p>— №4 —</p>
           <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
         <li>
-          <h3>Мало туристов</h3>
+          <h3 class="features-title">Мало туристов</h3>
           <p>— №5 —</p>
           <p>Большинство едет в Гранд Каньон и толпится там</p>
         </li>
@@ -76,41 +76,44 @@
       <div class="search-hotels">
         <h2>Заинтересовались?</h2>
         <p>
-          Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+          Укажите предполагаемые даты поездки, <br>
+          и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
         <a href="#">Поиск гостиницы в Седоне</a>
-        <form class="search-form" action="#" method="post">
-          <fieldset class="date-picker">
-            <label for="check-in">Дата заезда:</label>
-            <input type="date" name="check-in" value="2016-04-24" id="check-in">
-            <span class="sprite sprite-calendar"></span>
-          </fieldset>
-          <fieldset class="date-picker">
-            <label for="check-out">Дата выезда:</label>
-            <input type="date" name="check-out" value="2016-07-04" id="check-out">
-            <span class="sprite sprite-calendar"></span>
-          </fieldset>
-          <fieldset class="guest-number">
-            <label for="adults">Взрослые:</label>
-            <div class="counter-block">
-              <button class="sprite sprite-minus" type="button" name="button"></button>
-              <input type="number" name="adults" value="2" id="adults">
-              <button class="sprite sprite-plus" type="button" name="button"></button>
-            </div>
-            <label for="children">Дети:</label>
-            <div class="counter-block">
-              <button class="sprite sprite-minus" type="button" name="button"></button>
-              <input type="number" name="children" value="0" id="children">
-              <button class="sprite sprite-plus" type="button" name="button" value="submit"></button>
-            </div>
-          </fieldset>
-          <button type="submit" name="search" id="search">Найти</button>
-        </form>
+        <div class="modal-content">
+          <form class="search-form" action="#" method="post">
+            <fieldset class="date-picker">
+              <label for="check-in">Дата заезда:</label>
+              <input type="date" name="check-in" value="2016-04-24" id="check-in">
+              <span class="sprite sprite-calendar"></span>
+            </fieldset>
+            <fieldset class="date-picker">
+              <label for="check-out">Дата выезда:</label>
+              <input type="date" name="check-out" value="2016-07-04" id="check-out">
+              <span class="sprite sprite-calendar"></span>
+            </fieldset>
+            <fieldset class="guest-number">
+              <label for="adults">Взрослые:</label>
+              <div class="counter-block">
+                <button class="sprite sprite-minus" type="button" name="button"></button>
+                <input type="number" name="adults" value="2" id="adults">
+                <button class="sprite sprite-plus" type="button" name="button"></button>
+              </div>
+              <label for="children">Дети:</label>
+              <div class="counter-block">
+                <button class="sprite sprite-minus" type="button" name="button"></button>
+                <input type="number" name="children" value="0" id="children">
+                <button class="sprite sprite-plus" type="button" name="button" value="submit"></button>
+              </div>
+            </fieldset>
+            <button type="submit" name="search" id="search">Найти</button>
+          </form>
+        </div>
       </div>
       <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d296369.38699411886!2d-111.9146210575396!3d34.84491733584156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1470531038271" width="1200" height="470" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497672.3600546527!2d-112.28205428784347!3d34.97013628551345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNg!5e0!3m2!1sru!2s!4v1472414208058" width="1200" height="576" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
-      <footer>
+      <footer class="clearfix">
           <div class="footer-tag footer-item">
             <a href="https://www.instagram.com/explore/tags/visitsedona/">#visitSedona</a>
           </div>
@@ -121,7 +124,7 @@
           </div>
           <div class="footer-copyright footer-item">
             <span>Website by</span>
-            <a class="wrapper sprite sprite-copyright" href="https://htmlacademy.ru" title="HTMLacademy"></a>
+            <a class="sprite sprite-copyright" href="https://htmlacademy.ru" title="HTMLacademy"></a>
           </div>
       </footer>
     </div>

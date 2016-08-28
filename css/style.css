@@ -27,6 +27,11 @@ h4 {
 
   color: #ffffff;
 }
+label,
+input,
+button {
+  cursor: pointer;
+}
 .clearfix:after {
   content: "";
   display: table;
@@ -40,10 +45,12 @@ h4 {
   box-shadow: 0 0 15px 5px rgba(0, 1, 1, 0.2);
 }
 .wrapper {
-  padding: 0 70px;
+  padding: 0 6%;
 }
 .sprite {
   position: relative;
+  display: inline-block;
+  vertical-align: middle;
 }
 .sprite::before {
   content: "";
@@ -73,8 +80,6 @@ header {
   padding: 0;
   padding-top: 14px;
 
-  font-size: 0;
-
   list-style: none;
 }
 .menu:last-child {
@@ -84,7 +89,6 @@ header {
   float: left;
   width: 50%;
 
-  font-size: 14px;
   line-height: 26px;
   text-align: center;
 }
@@ -98,7 +102,7 @@ header {
   color: #81b3d2;
 }
 .menu a:active {
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 .menu .active {
   color: #766357;
@@ -107,7 +111,7 @@ header {
   color: #604e43;
 }
 .menu .active:active {
-  opacity: 0.3;
+  color: rgba(118, 99, 87, 0.3);
 }
 .logo {
   position: absolute;
@@ -120,20 +124,22 @@ header {
 /* ПОДВАЛ */
 
 footer {
-  min-height: 44px;
+  position: relative;
+  z-index: 2;
+  min-height: 120px;
   margin: 0 auto;
-  padding: 38px 73px;
+
+  background-color: rgba(254, 254, 254, 0.9);
 }
 .footer-item {
   float: left;
-  width: 33%;
-}
-.footer-item:last-child {
-  float: right;
+  width: 400px;
+  min-height: 48px;
+  margin-top: 50px;
+
+  text-align: center;
 }
 .footer-tag {
-  margin-top: 10px;
-
   font-size: 21px;
   line-height: 26px;
 }
@@ -145,6 +151,7 @@ footer {
 }
 .footer-social {
   margin: 0;
+  margin-top: 40px;
   padding: 0;
 
   font-size: 0;
@@ -157,6 +164,18 @@ footer {
   margin-right: 7px;
 
   background-color: #81b3d2;
+}
+.footer-copyright {
+  font-size: 0
+}
+.footer-copyright span,
+.sprite-copyright {
+  width: 105px;
+  height: 39px;
+  line-height: 39px;
+  display: inline-block;
+  font-size: 14px;
+  vertical-align: middle;
 }
 .social-btn:last-child {
   margin-right: 0;
@@ -187,11 +206,6 @@ footer {
 .sprite-ico-youtube:active::before {
   opacity: 0.3;
 }
-.footer-copyright {
-  margin-top: 10px;
-
-  text-align: right;
-}
 .sprite-copyright::before {
   width: 113px;
   height: 39px;
@@ -219,7 +233,7 @@ footer {
 
   background-image: url("../img/welcome.png"), url("../img/welcome-bg.jpg");
   background-repeat: no-repeat;
-  background-position: center, top;
+  background-position: center, 0 28%;
   background-size: auto, cover;
 }
 .intro::after {
@@ -241,11 +255,11 @@ footer {
 
 .features {
   width: 100%;
-  height: 256px;
+  min-height: 256px;
 
   background-color: #81b3d2;
   background-repeat: no-repeat;
-  background-size: 66%;
+  background-size: 67%;
 }
 .features-first {
   background-image: url("../img/features-1.jpg");
@@ -258,7 +272,7 @@ footer {
 .features-description {
   float: left;
   width: 25%;
-  padding: 30px 50px;
+  padding: 25px 50px;
 
   text-align: center;
 
@@ -267,10 +281,16 @@ footer {
 .features-second .features-description {
   float: right;
 }
+.features-title {
+  line-height: 21px;
+}
 .features-description h3 {
   padding: 0 50px;
+  padding-top: 10px;
 }
-
+.features-description p {
+  margin: 20px 0;
+}
 .list-block {
   margin: 0;
   padding: 0;
@@ -279,12 +299,8 @@ footer {
 }
 .list-block li {
   float: left;
-  width: 33%;
-
+  width: 400px;
   text-align: center;
-}
-.list-block li:last-child {
-  float: right;
 }
 .list-block h3 {
   width: 130px;
@@ -321,17 +337,17 @@ footer {
   background-position: -10px -708px;
 }
 .features-list {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 
   background-color: #eeeeee;
 }
 .features-list li {
   margin-top: 25px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .features-list p {
   width: 280px;
-  margin: 21px auto;
+  margin: 25px auto;
 }
 
 /* ФОРМА ПОИСКА НА ГЛАВНОЙ */
@@ -344,6 +360,9 @@ footer {
   margin: 0 auto;
 
   text-align: center;
+}
+.search-hotels h2 {
+  line-height: 24px;
 }
 .search-hotels p {
   margin-top: 30px;
@@ -361,13 +380,18 @@ footer {
   background-color: #766357;
   text-decoration: none;
 }
-.search-form {
+.modal-content {
   position: absolute;
+  z-index: 50;
 
-  width: 458px;
-  padding: 55px;
+  width: 568px;
   background-color: #ffffff;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
+}
+.search-form {
+  width: 458px;
+  margin: 0 auto;
+  padding: 55px 0;
 }
 .search-form fieldset {
   height: 38px;
@@ -442,9 +466,12 @@ footer {
   font-size: 21px;
   text-transform: uppercase;
 }
+.sprite-calendar {
+  width: 21px;
+  height: 38px;
+  margin-left: -35px;
+}
 .sprite-calendar::before {
-  left: -20px;
-
   width: 22px;
   height: 22px;
 
@@ -497,7 +524,7 @@ footer {
   background-color: #669ec0;
 }
 .search-form button[type="submit"]:active {
-  color: #88b6d1;
+  color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
 input[type="date"]::-webkit-inner-spin-button,
@@ -512,6 +539,11 @@ input[type=number]::-webkit-inner-spin-button {
   margin: 0;
 }
 
+/* КАРТА */
+
+.map {
+  height: 456px;
+}
 /* ОТЕЛИ */
 
 /* ФИЛЬТР ПОИСКА */
@@ -549,8 +581,6 @@ input[type=number]::-webkit-inner-spin-button {
 }
 input[type="checkbox"] + .sprite-checkbox {
   padding-left: 40px;
-
-  cursor: pointer;
 }
 input[type="checkbox"] + .sprite-checkbox::before {
   left: 10px;
@@ -572,7 +602,7 @@ input[type="checkbox"]:disabled + .sprite-checkbox {
   cursor: default;
 }
 .price-range {
-  width: 330px;
+  width: 328px;
 
   text-transform: uppercase;
 
@@ -588,7 +618,7 @@ input[type="checkbox"]:disabled + .sprite-checkbox {
 .price-controls {
   position: relative;
 
-  width: 320px;
+  width: 318px;
   height: 32px;
   margin-bottom: 20px;
 
@@ -596,6 +626,10 @@ input[type="checkbox"]:disabled + .sprite-checkbox {
 
   border: 2px solid #ffffff;
   border-radius: 2px;
+}
+.price-controls,
+.range-controls {
+  margin-left: 13px;
 }
 .price-controls::after {
   content: "";
@@ -687,8 +721,6 @@ input[type="checkbox"]:disabled + .sprite-checkbox {
   border: 2px solid #ffffff;
   border-radius: 2px;
   outline: none;
-
-  cursor: pointer;
 }
 .price-range input[type="submit"]:hover {
   color: #000000;
@@ -713,6 +745,8 @@ input[type="checkbox"]:disabled + .sprite-checkbox {
 .sort-arrows {
   float: right;
   margin: 0;
+  margin-top: 5px;
+  margin-right: 5px;
   padding: 0;
 
   font-size: 0;
@@ -824,7 +858,7 @@ input[type="checkbox"]:disabled + .sprite-checkbox {
   text-align: right;
 }
 .sprite-star {
-  margin-left: 20px;
+  margin-left: 25px;
 }
 .sprite-star::before {
   width: 18px;
@@ -833,8 +867,9 @@ input[type="checkbox"]:disabled + .sprite-checkbox {
   background-position: -10px -912px;
 }
 .rating {
-  padding: 3px 10px;
+  padding: 3px 12px;
 
+  color: #666666;
   text-align: center;
 
   background-color: #f2f2f2;
@@ -856,8 +891,11 @@ input[type="checkbox"]:disabled + .sprite-checkbox {
 .hotel-name:active {
   opacity: 0.3;
 }
+.legend span {
+  margin-right: 35px;
+}
 .btn {
-  margin-right: 5px;
+  margin-right: 3px;
   padding: 5px 17px;
 
   font-weight: bold;
