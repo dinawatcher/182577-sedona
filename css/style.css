@@ -62,7 +62,7 @@ button {
 
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
-
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -643,6 +643,7 @@ input[type="checkbox"]:disabled + .sprite-checkbox {
   background-color: #ffffff;
 
   transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
 }
 .price-controls label {
   display: inline-block;
