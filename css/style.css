@@ -369,8 +369,7 @@ footer {
   width: 568px;
   min-height: 192px;
   margin: 0 auto;
-
-  text-align: left;
+  text-align: center;
 }
 .search-hotels h2 {
   line-height: 24px;
@@ -385,7 +384,6 @@ footer {
 
   font-size: 21px;
   line-height: 87px;
-  text-align: center;
 
   color: #ffffff;
   background-color: #766357;
@@ -395,6 +393,8 @@ footer {
   width: 458px;
   margin: 0 auto;
   padding: 55px 0;
+
+  text-align: left;
 }
 .search-form fieldset {
   height: 38px;
