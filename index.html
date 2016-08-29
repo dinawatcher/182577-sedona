@@ -79,7 +79,7 @@
           Укажите предполагаемые даты поездки, <br>
           и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <a href="#">Поиск гостиницы в Седоне</a>
+        <a class="search" href="#">Поиск гостиницы в Седоне</a>
         <div class="modal-content">
           <form class="search-form" action="#" method="post">
             <fieldset class="date-picker">
@@ -128,5 +128,14 @@
           </div>
       </footer>
     </div>
+    <script>
+      var link = document.querySelector(".search");
+      var popup = document.querySelector(".modal-content");
+
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.toggle("modal-content-show")
+      });
+    </script>
   </body>
 </html>

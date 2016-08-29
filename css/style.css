@@ -352,6 +352,17 @@ footer {
 
 /* ФОРМА ПОИСКА НА ГЛАВНОЙ */
 
+.modal-content {
+  position: absolute;
+  z-index: 50;
+  display: none;
+  width: 568px;
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
+}
+.modal-content-show {
+  display: block;
+}
 .search-hotels {
   position: relative;
 
@@ -359,7 +370,7 @@ footer {
   min-height: 192px;
   margin: 0 auto;
 
-  text-align: center;
+  text-align: left;
 }
 .search-hotels h2 {
   line-height: 24px;
@@ -380,14 +391,6 @@ footer {
   background-color: #766357;
   text-decoration: none;
 }
-.modal-content {
-  position: absolute;
-  z-index: 50;
-
-  width: 568px;
-  background-color: #ffffff;
-  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
-}
 .search-form {
   width: 458px;
   margin: 0 auto;
@@ -402,6 +405,9 @@ footer {
 }
 .search-form label {
   width: 25%;
+}
+.date-picker {
+  text-align: left;
 }
 .date-picker,
 .counter-block,
@@ -438,6 +444,10 @@ footer {
 }
 .counter-block label {
   vertical-align: middle;
+}
+.guest-number label:last-of-type {
+  padding-left: 50px;
+  box-sizing: border-box;
 }
 .counter-block input[type="number"] {
   font-weight: bold;
