@@ -96,7 +96,7 @@
               <label for="adults">Взрослые:</label>
               <div class="counter-block">
                 <button class="sprite sprite-minus" type="button" name="button"></button>
-                <input type="number" name="adults" value="2" id="adults">
+                <input type="number" name="adults" value="2" id="adults" required>
                 <button class="sprite sprite-plus" type="button" name="button"></button>
               </div>
               <label for="children">Дети:</label>
@@ -128,14 +128,6 @@
           </div>
       </footer>
     </div>
-    <script>
-      var link = document.querySelector(".search");
-      var popup = document.querySelector(".modal-content");
-
-      link.addEventListener("click", function(event) {
-        event.preventDefault();
-        popup.classList.toggle("modal-content-show")
-      });
-    </script>
+    <script src="js/main.js"></script>
   </body>
 </html>
