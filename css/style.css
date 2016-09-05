@@ -137,13 +137,14 @@ footer {
   float: left;
   width: 400px;
   min-height: 48px;
-  margin-top: 50px;
+  margin-top: 48px;
 
   text-align: center;
 }
 .footer-tag {
   font-size: 21px;
   line-height: 26px;
+  word-break: break-all;
 }
 .footer-tag a {
   font-weight: bold;
@@ -169,7 +170,7 @@ footer {
   background-color: #81b3d2;
 }
 .footer-copyright {
-  font-size: 0
+  font-size: 0;
 }
 .footer-copyright span,
 .sprite-copyright {
@@ -179,7 +180,7 @@ footer {
 
   font-size: 14px;
   line-height: 39px;
-  vertical-align: middle;
+  vertical-align: top;
 }
 .social-btn:last-child {
   margin-right: 0;
@@ -607,7 +608,7 @@ input[type=number]::-webkit-inner-spin-button {
 /* КАРТА */
 
 .map {
-  height: 456px;
+  height: 473px;
 
   background: #f2f3ee url("../img/map.jpg") no-repeat;
 
